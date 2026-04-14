@@ -26,6 +26,7 @@ setup(
             'tidybot_irl = temp_1.tidybot_irl:main',
             'patch_mapper = temp_1.patch_mapper:main',
             'go_location = temp_1.go_location:main',
+            'tidybot_complexity3 = temp_1.tidybot_complexity3:main',
 
         ],
     },

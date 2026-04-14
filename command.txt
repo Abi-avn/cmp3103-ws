@@ -44,10 +44,12 @@ ros2 run temp_1 tidybot_complexity2
 -------------------------------------------------------------------------------------------------------------------------------
 ### Complexity level 3
 
+colcon build
 ros2 launch uol_tidybot tidybot.launch.py world:=level_2_1.world
 
+source install/setup.bash
 ros2 run  uol_tidybot generate_objects --ros-args -p n_objects:=1 -p cx:=0.7 -p  cy:=1.15 -p spread:=0.1
-
+ros2 run temp_1 tidybot_complexity3
 
 ros2 launch nav2_bringup bringup_launch.py \
 map:=/workspaces/cmp3103-ws/tidybot_task3_map.yaml \
